@@ -51,4 +51,23 @@ body {
 
 .navbar {
   grid-row: 1/5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: start;
+  gap: 1rem;
 }
+
+.navbar_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6,1fr);
+  border: 1px solid red;
+}
+
+.navbar_2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+}
+
