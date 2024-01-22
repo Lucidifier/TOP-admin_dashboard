@@ -33,6 +33,7 @@ body {
   display: grid;
   grid-template: repeat(4,1fr) / repeat(4,1fr);
   background-color: white;
+  color: black;
 }
 
 .container > * {
@@ -41,6 +42,26 @@ body {
 
 .header {
   grid-column: 2/5; 
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header_row_1 {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+
+}
+
+.header_row_2 {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.action_bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .main {
@@ -70,4 +91,5 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3,1fr);
 }
+
 
