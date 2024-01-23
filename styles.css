@@ -1,3 +1,9 @@
+:root {
+  --font-big: 1.4rem;
+  --font-medium: 1.1rem;
+  --font-small: 0.8rem;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -10,7 +16,6 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
-  font-weight: normal;
 }
 
 ol, ul {
@@ -31,7 +36,8 @@ body {
   width:100%;
   height: 100vh;
   display: grid;
-  grid-template: repeat(4,1fr) / repeat(4,1fr);
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr;
   background-color: white;
   color: black;
 }
@@ -40,8 +46,13 @@ body {
   border: 1px solid red;
 } 
 
+.header_main {
+  display: grid;
+  grid-template-rows: 1fr 5fr;  
+  align-items: stretch;
+}
+
 .header {
-  grid-column: 2/5; 
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
@@ -65,8 +76,6 @@ body {
 }
 
 .main {
-  grid-column: 2/5;
-  grid-row: 2/5;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -111,15 +120,27 @@ body {
   grid-row: 1/5;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.5fr 1fr;
   justify-content: start;
   gap: 1rem;
+  justify-items: start;
+  margin-left: 5rem;
+  font-size: var(--font-medium);
+  font-weight: bold;
+}
+
+.navbar > p {
+  font-size: var(--font-big)
 }
 
 .navbar_1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6,1fr);
+  border: 1px solid red;
+}
+
+.navbar_1 p {
   border: 1px solid red;
 }
 
