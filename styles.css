@@ -42,8 +42,6 @@ body {
   color: black;
 }
 
-.container > * {
-} 
 
 .header_main {
   display: grid;
@@ -92,9 +90,11 @@ body {
 }
 
 .project_list {
+  margin: 4rem 1.5rem 4rem 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  gap: 1.5rem;
 }
 
 .main_column_announcements_trending {
