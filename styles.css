@@ -2,6 +2,8 @@
   --font-big: 1.4rem;
   --font-medium: 1.1rem;
   --font-small: 0.8rem;
+
+  --color-primary: lightseagreen;
 }
 
 html {
@@ -64,7 +66,7 @@ body {
 
 .header_row_2 {
   display: grid;
-  grid-template-columns: 1fr 5fr 3fr;
+  grid-template-columns: 0.5fr 4fr 1fr 3fr;
   margin-left: 4rem;
   margin-bottom: 1rem;
   margin-right: 4rem;
@@ -74,6 +76,14 @@ body {
 .action_bar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.action_bar > button {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  background-color: var(--color-primary);
+  place-self: center;
 }
 
 .icon {
@@ -92,6 +102,33 @@ body {
 .header_row_1_username {
   justify-self: start;
   align-self: center;
+}
+
+.icon_user_row2 {
+  place-self: center;
+}
+
+.icon_user_row2_img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 3rem;
+}
+
+.user_welcome {
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+
+.user_welcome_name {
+  padding-top: 0.6rem;
+}
+
+.user_welcome > p:first-child {
+  font-size: var(--font-small);
+}
+
+.user_welcome > p:last-child {
+  font-size: var(--font-big);
 }
 
 .main {
@@ -149,7 +186,7 @@ body {
   justify-items: start;
   font-size: var(--font-medium);
   font-weight: bold;
-  background-color: lightseagreen;
+  background-color: var(--color-primary);
 }
 
 .navbar > p {
