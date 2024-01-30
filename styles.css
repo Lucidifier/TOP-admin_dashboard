@@ -100,11 +100,12 @@ body {
 .main_column_announcements_trending {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  margin-right: 2rem;
 }
 
 .announcements {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
 }
 
 .announcements_content {
@@ -114,7 +115,8 @@ body {
 
 .trending {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  margin-bottom: 4rem;
 }
 
 .trending_content {
