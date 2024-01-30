@@ -47,7 +47,7 @@ body {
 
 .header_main {
   display: grid;
-  grid-template-rows: 1fr 5fr;  
+  grid-template-rows: 0.5fr 3.9fr;  
   align-items: stretch;
 }
 
@@ -136,17 +136,31 @@ body {
   grid-template-columns: 2fr 1fr;
 }
 
+.main_column_projects > h2 {
+  padding-left: 1.5rem;
+  align-self: start;
+}
+
 .main_column_projects {
   display: grid;
-  grid-template-rows: 20px 1fr;
+  grid-template-rows: 0.1fr 1fr;
 }
 
 .project_list {
-  margin: 4rem 1.5rem 4rem 1.5rem;
+  margin: 1rem 1.5rem 3rem 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5rem;
+}
+
+.project_list > article {
+  background-color: orange;
+  color: black;
+  border-left: 0.5rem  solid var(--color-primary);
+  padding: 2rem 2rem 5rem 2rem;
+  word-wrap: break-word;
+  border-radius: 1rem;
 }
 
 .main_column_announcements_trending {
