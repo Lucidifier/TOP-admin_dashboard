@@ -133,7 +133,7 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
 
 .main_column_projects > h2 {
@@ -147,7 +147,7 @@ body {
 }
 
 .project_list {
-  margin: 1rem 1.5rem 3rem 1.5rem;
+  margin: 1.7rem 1.5rem 3rem 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -171,13 +171,22 @@ body {
 
 .announcements {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 0.1fr 1fr;
 }
 
 .announcements_content {
+  background-color: orange;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
+
+.announcements_content > article {
+  margin: 1rem;
+  border-bottom: 1px solid  black;
+}
+
 
 .trending {
   display: grid;
