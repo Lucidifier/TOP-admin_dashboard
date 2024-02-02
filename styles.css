@@ -3,7 +3,11 @@
   --font-medium: 1.1rem;
   --font-small: 0.8rem;
 
-  --color-primary: lightseagreen;
+  --color-primary: #9DBC98;
+  --color-secondary: #F9EFDB;
+  --color-tertiary: #638889;
+  --color-four: #EBD9B4;
+
 }
 
 html {
@@ -40,7 +44,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 6fr;
   grid-template-rows: 1fr;
-  background-color: white;
+  background-color: var(--color-secondary);
   color: black;
 }
 
@@ -54,6 +58,7 @@ body {
 .header {
   display: grid;
   grid-template-rows: 1fr 3fr;
+  background-color: var(--color-four);
 }
 
 .header_row_1 {
@@ -167,9 +172,9 @@ body {
 }
 
 .project_list > article {
-  background-color: orange;
+  background-color: var(--color-four);
   color: black;
-  border-left: 0.5rem  solid var(--color-primary);
+  border-left: 0.5rem  solid var(--color-tertiary);
   padding: 2rem 2rem 5rem 2rem;
   word-wrap: break-word;
   border-radius: 1rem;
@@ -187,7 +192,7 @@ body {
 }
 
 .announcements_content {
-  background-color: orange;
+  background-color: var(--color-four);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   border-radius: 1rem;
@@ -210,7 +215,7 @@ body {
 .trending_content {
   display: grid;
   grid-template-rows: repeat(4,1fr);
-  background-color: orange;
+  background-color: var(--color-four);
   border-radius: 1rem;
 }
 
