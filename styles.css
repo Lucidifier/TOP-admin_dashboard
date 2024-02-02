@@ -221,21 +221,123 @@ body {
 
 .navbar > p {
   font-size: var(--font-big);
-  margin-left: 5rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.navbar > p::before {
+  content: url(images/diving-scuba-flag.svg);
+  display: inline-block;
+  width: 2vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
 }
 
 .navbar_1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6,1fr);
-  margin-left: 5rem;
+  margin-left: 1rem;
+  margin-top: 3rem;
+}
+
+.navbar_1 > p:first-child::before {
+  content: url(images/home-variant-outline.svg);
+  display: inline-block;
+  width: 1.3vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.navbar_1 > p:nth-child(2)::before {
+  content: url(images/fit-to-screen.svg);
+  display: inline-block;
+  width: 1.3vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.navbar_1 > p:nth-child(3)::before {
+  content: url(images/message.svg);
+  display: inline-block;
+  width: 1.3vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.navbar_1 > p:nth-child(4)::before {
+  content: url(images/clock-time-four.svg);
+  display: inline-block;
+  width: 1.3vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.navbar_1 > p:nth-child(5)::before {
+  content: url(images/book-open-page-variant.svg);
+  display: inline-block;
+  width: 1.3vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.navbar_1 > p:nth-child(6)::before {
+  content: url(images/account-group.svg);
+  display: inline-block;
+  width: 1.3vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
 }
 
 .navbar_2 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3,1fr);
-  margin-left: 5rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.navbar_2 > p:nth-child(1)::before {
+  content: url(images/cog-outline.svg);
+  display: inline-block;
+  width: 1.3vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.navbar_2 > p:nth-child(2)::before {
+  content: url(images/help-circle.svg);
+  display: inline-block;
+  width: 1.3vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.navbar_2 > p:nth-child(3)::before {
+  content: url(images/shield-check.svg);
+  display: inline-block;
+  width: 1.3vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
 }
 
 
