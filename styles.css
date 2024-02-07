@@ -13,9 +13,6 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  height: 100%;
-  width: 100%;
-  margin: 0;
 }
 
 *, *:before, *:after {
@@ -54,7 +51,7 @@ body {
 
 .header_main {
   display: grid;
-  grid-template-rows: 1fr 2fr; 
+  grid-template-rows: 0.5fr 3.9fr;  
   align-items: stretch;
 }
 
@@ -83,7 +80,9 @@ body {
   display: grid;
   grid-template-columns: 0.5fr 4fr 1fr 3fr;
   margin-left: 4rem;
+  margin-bottom: 1rem;
   margin-right: 4rem;
+  padding-top: 2rem;
 }
 
 .action_bar {
@@ -107,7 +106,7 @@ body {
 
 .icon_bell {
   justify-self: end;
-  margin-left;
+  margin-left:;
 }
 
 .icon_user {
@@ -151,27 +150,25 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 3fr 1fr;
 }
 
 .main_column_projects > h2 {
   padding-left: 1.5rem;
-  align-self: center;
+  align-self: start;
 }
 
 .main_column_projects {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
 }
 
 .project_list {
-  margin: 0rem 1.5rem 3rem 1.5rem;
+  margin: 1.7rem 1.5rem 3rem 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5rem;
-  align-self: start;
 }
 
 .project_list > article {
@@ -191,12 +188,7 @@ body {
 
 .announcements {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  margin-top: 2rem;
-}
-
-.announcements > h2 {
-  align-self: center;
+  grid-template-rows: 0.1fr 1fr;
 }
 
 .announcements_content {
@@ -204,27 +196,25 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   border-radius: 1rem;
-  margin-top: 2rem;
-  padding: 3rem;
+  margin-top: 1rem;
 }
 
 .announcements_content > article {
+  margin: 1rem;
   border-bottom: 1px solid  black;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
 }
 
 
 .trending {
   display: grid;
-  grid-template-rows: 1fr 3fr;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  grid-template-rows: 1fr 5fr;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
 }
 
 .trending_content {
   display: grid;
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
   background-color: var(--color-four);
   border-radius: 1rem;
 }
@@ -234,10 +224,10 @@ body {
 }
 
 .navbar {
-  grid-row: 1/2;
+  grid-row: 1/5;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.5fr 1fr;
   justify-content: start;
   gap: 1rem;
   justify-items: start;
